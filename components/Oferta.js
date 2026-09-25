@@ -34,13 +34,13 @@
     
     export const ItemContact = ({item}) => (
         <li className="flex pb-2">
-            <span>{item.icon}</span>
+            <span className="pr-2">{item.icon}</span>
             <p>{item.description}</p>
         </li>
     )
     export const ItemLinks = ({item, onClose}) => {
         return(
-        <li className="p-1 bg-[red] m-1">
+        <li className="p-1 m-1 text-3xl mb-8 text-center md:bg-[green]">
             <span>
                 <a href={item.href} onClick={(e) => {
                     // e.preventDefault();

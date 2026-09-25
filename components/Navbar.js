@@ -29,6 +29,8 @@ export default function Navbar(){
     {isMenuOpen && (
         <div className="backdrop-blur-sm  md:hidden fixed inset-0 flex flex-col items-center justify-center">
             <List list={links} ItemComponent={ItemLinks} onClose={closeMenu}/>
+            <div className="w-9 h-0.5 bg-[#e24b4a] mb-8"></div>      
+            <a className="text-sm text-white/60">+48 123 456 789</a>      
         </div>
     )}
     {/* DESKTOP: dropdown, hover steruje CSS-em, zero JS */}
