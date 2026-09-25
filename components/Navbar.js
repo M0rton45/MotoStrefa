@@ -1,5 +1,5 @@
 "use client"
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import {List, ItemLinks} from "@/components/Oferta";
 import {links} from "@/data/oferta";
@@ -15,19 +15,19 @@ export default function Navbar(){
     return(
         <nav 
         className='pt-2 flex justify-between items-center min-h-12 px-4'>
-            <h1 className=" font-mono">Moto<label className="text-[#e24b4a]">Strefa</label></h1>
+            <h1 className="relative z-10 font-mono">Moto<label className="text-[#e24b4a]">Strefa</label></h1>
             {/* <img src="/logo.jpg" alt="Logo" className="h-10 w-10"/> */}
             <div className="group relative flex">
     <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:pointer-events-none">
-        <div className="flex">
-            MENU
-            <Menu/>
+        <div className="relative z-10 flex">
+            {isMenuOpen || <span>MENU</span>}
+            {isMenuOpen ? <X/> : <Menu/>}
         </div>
     </button>
 
     {/* MOBILE: fullscreen, klik steruje isMenuOpen */}
     {isMenuOpen && (
-        <div className="backdrop-blur-sm md:hidden fixed inset-0 flex flex-col items-center justify-center">
+        <div className="backdrop-blur-sm  md:hidden fixed inset-0 flex flex-col items-center justify-center">
             <List list={links} ItemComponent={ItemLinks} onClose={closeMenu}/>
         </div>
     )}

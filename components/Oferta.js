@@ -40,15 +40,14 @@
     )
     export const ItemLinks = ({item, onClose}) => {
         return(
-        <li>
+        <li className="p-1 bg-[red] m-1">
             <span>
                 <a href={item.href} onClick={(e) => {
                     // e.preventDefault();
                     onClose();
                     // console.log("click");
                 }}    
-                >
-                    
+                >    
                     {item.label}
                 </a>
             </span>
