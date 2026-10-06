@@ -30,7 +30,7 @@ export const contact = [
     {
         id: 1,
         icon: <Clock5 />,
-        description: "Pon-Pt 8:00-17:00, Sob 9:00-14:00",
+        description: "Pon-Pt 8:00-17:30, Sob 9:00-14:00",
     },
     {
         id: 2,

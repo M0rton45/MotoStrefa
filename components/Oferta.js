@@ -1,12 +1,13 @@
 
-    export const List = ({list, ItemComponent, onClose}) => (
+    export const List = ({list, ItemComponent, onClose, className}) => (
         // console.log(list),
-        <ul>
+        <ul className={`${className}`}>
             {list.map((item) =>(
                     <ItemComponent 
                         key={item.id}
                         item={item}
                         onClose={onClose}
+
                     />
             ))}
         </ul>
@@ -15,19 +16,21 @@
         console.log(item.icon),
         <li 
         className="
+            w-80
+            h-35
             bg-[#171717]
             border-2
             border-[#2a2a2a]
             rounded-lg
-            p-2
-            my-4
+            p-4
+            my-2
         ">
             <div className="flex p-1">
                 <span className="pr-3">{item.icon}</span>
                 <h3>{item.title}</h3>
             </div>
             <p
-            className="text-[#909088]"
+            className="text-[#909088] mt-2"
             >{item.description}</p>
         </li>
     )
@@ -40,7 +43,7 @@
     )
     export const ItemLinks = ({item, onClose}) => {
         return(
-        <li className="p-1 m-1 text-3xl mb-8 text-center md:bg-[green]">
+        <li className="p-1 m-1 text-3xl mb-8 text-center md:mb-1 md:bg-[backdrop-blur-sm] md:text-xl ">
             <span>
                 <a href={item.href} onClick={(e) => {
                     // e.preventDefault();

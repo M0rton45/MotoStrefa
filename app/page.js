@@ -4,15 +4,15 @@ import {List, ItemOffer, ItemContact} from "@/components/Oferta";
 export default function Home(){
   return (
     <main id="hero">
-      <section className="py-2 px-5">
-        <h2 className="text-[#e24b4a] ">Sklep motoryzacyjny</h2>
-        <h3 className="font-bold text-2xl py-2">Gdzie znajdziessz wszystko dla twojego auta</h3>
-        <p className="text-[#b8b8b5] text-xs">Klucze, zestawy narzędziowe i akcesoria od sprawdzonych marek</p>
+      <section className="py-2 px-5 mt-10 text-center flex flex-col items-center">
+        <h2 className="text-[#e24b4a] uppercase font-bold">Sklep motoryzacyjny</h2>
+        <h3 className="font-bold text-[40px] leading-10 py-2">Tu&nbsp;znajdziessz wszystko dla twojego auta</h3>
+        <p className="text-[#b8b8b5] text-[20px] mt-5 max-w-[300px] font-normal">Klucze, zestawy narzędziowe i akcesoria od sprawdzonych&nbsp;marek</p>
       </section>
-      <div className="flex flex-col px-5">
+      <div className="flex flex-col px-5 mb-10">
         <a 
           href="#offer"
-          className=" bg-[#e24b4a] p-3 rounded-lg mt-5"
+          className=" bg-[#e24b4a] p-3 rounded-lg mt-5 md:w-60 text-center mt-6"
         >
           Zobacz ofertę
         </a>
@@ -31,6 +31,8 @@ export default function Home(){
             border-2
             border-[#2a2a2a]
             my-3
+            mt-4
+            md:w-60 text-center
           "
         >
           Jak dojechać
@@ -39,17 +41,20 @@ export default function Home(){
       <section id="offer" 
       className="
         px-5
+        mb-10
       ">
-        <h3 className="text-[#808078]">Oferta:</h3>
-        <List list={offers} ItemComponent={ItemOffer}/>
+        <h3 className="text-[#e24b4a] text-[25px] uppercase font-bold">Oferta:</h3>
+          <List list={offers} ItemComponent={ItemOffer} className="flex flex-col items-center md:flex"/>
       </section>
       <section id="contact" 
       className="
         py-2 
         px-5
+        mb-10
       ">
-        <h3 className="text-[#808078] mb-3">Kontakt:</h3>
-        <List list={contact} ItemComponent={ItemContact}/>
+        {/* [#808078] */}
+        <h3 className="text-[#e24b4a] mb-3 text-[25px] uppercase font-bold ">Kontakt:</h3>
+        <List list={contact} ItemComponent={ItemContact} />
       </section>
     </main>
   )
