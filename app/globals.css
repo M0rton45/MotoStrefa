@@ -41,3 +41,7 @@ body::before {
   filter: blur(4px);
   transform: rotate(30deg);
 }
+
+@utility input-style{
+  @apply md:py-3 md:w-80 md:my-3
+}
