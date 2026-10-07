@@ -41,10 +41,10 @@ export default function Home(){
       <section id="offer" 
       className="
         px-5
-        mb-10
+        mb-8
       ">
-        <h3 className="text-[#e24b4a] text-[25px] uppercase font-bold">Oferta:</h3>
-          <List list={offers} ItemComponent={ItemOffer} className="flex flex-col items-center md:flex"/>
+        <h3 className="text-[#e24b4a] text-[25px] uppercase font-bold mb-4">Oferta:</h3>
+          <List list={offers} ItemComponent={ItemOffer} className="flex flex-col items-center md:flex-row md:justify-between"/>
       </section>
       <section id="contact" 
       className="
@@ -53,8 +53,8 @@ export default function Home(){
         mb-10
       ">
         {/* [#808078] */}
-        <h3 className="text-[#e24b4a] mb-3 text-[25px] uppercase font-bold ">Kontakt:</h3>
-        <List list={contact} ItemComponent={ItemContact} />
+        <h3 className="text-[#e24b4a] text-[25px] uppercase font-bold mb-4">Kontakt:</h3>
+        <List list={contact} ItemComponent={ItemContact} className="flex flex-col items-center" />
       </section>
     </main>
   )

@@ -33,7 +33,7 @@ export default function Navbar(){
         </div>
     )}
     {/* DESKTOP: dropdown, hover steruje CSS-em, zero JS */}
-    <div className="absolute top-full right-0 flex flex-col
+    <div className="absolute top-[-9] right-5 flex flex-col
                 opacity-0 invisible -translate-y-2
                 md:group-hover:opacity-100 md:group-hover:visible md:group-hover:translate-y-0
                 transition-all duration-200">

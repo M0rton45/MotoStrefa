@@ -23,7 +23,8 @@
             border-[#2a2a2a]
             rounded-lg
             p-4
-            my-2
+            my-4
+            mx-2
         ">
             <div className="flex p-1">
                 <span className="pr-3">{item.icon}</span>
@@ -36,7 +37,7 @@
     )
     
     export const ItemContact = ({item}) => (
-        <li className="flex pb-2">
+        <li className="flex pb-2 my-3">
             <span className="pr-2">{item.icon}</span>
             <p>{item.description}</p>
         </li>
