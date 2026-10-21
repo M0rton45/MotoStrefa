@@ -39,7 +39,11 @@
     export const ItemContact = ({item}) => (
         <li className="flex pb-2 my-3">
             <span className="pr-2">{item.icon}</span>
-            <p>{item.description}</p>
+            {item.href ? (
+                <a href={item.href}>{item.description}</a>
+            ):(
+                <p>{item.description}</p>
+            )}
         </li>
     )
     export const ItemLinks = ({item, onClose}) => {

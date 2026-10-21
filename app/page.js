@@ -5,14 +5,14 @@ export default function Home(){
   return (
     <main id="hero">
       <section className="py-2 px-5 mt-10 text-center flex flex-col items-center">
-        <h2 className="text-[#e24b4a] uppercase font-bold">Sklep motoryzacyjny</h2>
+        <h2 className="text-brand-red uppercase font-bold">Sklep motoryzacyjny</h2>
         <h3 className="font-bold text-[40px] leading-10 py-2">Tu&nbsp;znajdziesz wszystko dla twojego auta</h3>
         <p className="text-[#b8b8b5] text-[20px] mt-5 max-w-[300px] md:max-w-[500px] font-normal">Klucze, zestawy narzędziowe i akcesoria od sprawdzonych&nbsp;marek</p>
       </section>
       <div className="flex flex-col px-5 mb-10 md:flex-row md:justify-around md:gitmx-20">
         <a 
           href="#offer"
-          className=" bg-[#e24b4a] p-3 rounded-lg mt-5 w-full text-center mt-6 md:input-style"
+          className=" bg-brand-red p-3 rounded-lg mt-5 w-full text-center mt-6 md:input-style"
         >
           Zobacz ofertę
         </a>
@@ -44,7 +44,7 @@ export default function Home(){
         px-5
         mb-8
       ">
-        <h3 className="text-[#e24b4a] text-[25px] uppercase font-bold mb-4">Oferta:</h3>
+        <h3 className="text-brand-red text-[25px] uppercase font-bold mb-4">Oferta:</h3>
           <List list={offers} ItemComponent={ItemOffer} className="flex flex-col items-center md:flex-row md:justify-between"/>
       </section>
       <section id="contact" 
@@ -54,8 +54,14 @@ export default function Home(){
         mb-10
       ">
         {/* [#808078] */}
-        <h3 className="text-[#e24b4a] text-[25px] uppercase font-bold mb-4">Kontakt:</h3>
+        <h3 className="text-brand-red text-[25px] uppercase font-bold mb-4">Kontakt:</h3>
         <List list={contact} ItemComponent={ItemContact} className="flex flex-col items-center" />
+      </section>
+      <section id="posts" className="
+        px-5
+        mb-8
+      ">
+        <h3 className="text-brand-red text-[25px] uppercase font-bold mb-4">Posty:</h3>
       </section>
     </main>
   )

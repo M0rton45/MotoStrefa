@@ -26,16 +26,19 @@ export const contact = [
         id: 0,
         icon: <Map />,
         description: "ul. Przykładowa 123, 00-000 Miasto",
+        href: "https://www.google.com/maps/dir/?api=1&destination=Zbigniewa Oleśnickiego 3, 42-470 Siewierz, Polska",
     },
     {
         id: 1,
         icon: <Clock5 />,
         description: "Pon-Pt 8:00-17:30, Sob 9:00-14:00",
+        href: null,
     },
     {
         id: 2,
         icon: <Phone />,
         description: "+48 123 456 789",
+        href: "tel:+48123456789",
     }   
 ]
 export const links = [

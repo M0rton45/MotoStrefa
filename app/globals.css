@@ -45,3 +45,7 @@ body::before {
 @utility input-style{
   @apply md:py-3 md:w-80 md:my-3
 }
+
+@theme {
+  --color-brand-red: #E31E24;
+}
