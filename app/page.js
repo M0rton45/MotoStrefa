@@ -57,12 +57,12 @@ export default function Home(){
         <h3 className="text-brand-red text-[25px] uppercase font-bold mb-4">Kontakt:</h3>
         <List list={contact} ItemComponent={ItemContact} className="flex flex-col items-center" />
       </section>
-      <section id="posts" className="
+      {/* <section id="posts" className="
         px-5
         mb-8
       ">
         <h3 className="text-brand-red text-[25px] uppercase font-bold mb-4">Posty:</h3>
-      </section>
+      </section> */}
     </main>
   )
 }
