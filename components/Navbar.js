@@ -14,7 +14,7 @@ export default function Navbar(){
     // komp rozwijane menu
     return(
         <nav 
-        className='pt-4 flex justify-around items-center min-h-12 px-8 text-[24px] md: justify-between'>
+        className='pt-4 flex justify-around items-center min-h-12 px-8 text-[24px] md: justify-between mt-[25px]'>
             <img src="/logo.png" alt="Logo" className="max-w-[150px] ml-22 "/>
             {/* <h1 className="relative z-10 font-mono">Moto<label className="text-[#e24b4a]">Strefa</label></h1> */}
             {/* <img src="/logo.jpg" alt="Logo" className="h-10 w-10"/> */}
